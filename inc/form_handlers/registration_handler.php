@@ -28,14 +28,14 @@
     //Email
     $email = strip_tags($_POST['reg_email']);
     $email = str_replace(' ', '', $email);
-    $email = ucfirst(strtolower($email));
+    $email = strtolower($email);
     $_SESSION['reg_email'] = $email; // Stores last name into session variable.
 
 
     //Email 2
     $email2 = strip_tags($_POST['reg_email2']);
     $email2 = str_replace(' ', '', $email2);
-    $email2 = ucfirst(strtolower($email2));
+    $email2 = strtolower($email2);
     $_SESSION['reg_email2'] = $email2; // Stores last name into session variable.
 
 
